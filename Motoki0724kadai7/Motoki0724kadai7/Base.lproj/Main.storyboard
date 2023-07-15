@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HXY-Om-KQ5">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="ud8-0i-hvW">
+            <objects>
+                <viewController id="dLg-fe-U2G" customClass="secondViewController" customModule="Motoki0724kadai7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W6L-gS-YEC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PBr-4Y-DV9">
+                                <rect key="frame" x="128" y="74" width="136" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FA4-V5-HBJ">
+                                <rect key="frame" x="128" y="133" width="136" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmc-pb-hgg">
+                                <rect key="frame" x="128" y="192" width="136" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <color key="baseForegroundColor" systemColor="linkColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapButton:" destination="dLg-fe-U2G" eventType="touchUpInside" id="K51-Jh-NT0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BiA-CQ-Py3">
+                                <rect key="frame" x="128" y="252" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BPC-Y8-60H"/>
+                        <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PBr-4Y-DV9" firstAttribute="top" secondItem="BPC-Y8-60H" secondAttribute="top" constant="15" id="3pY-24-hUX"/>
+                            <constraint firstItem="BPC-Y8-60H" firstAttribute="trailing" secondItem="PBr-4Y-DV9" secondAttribute="trailing" constant="129" id="6GS-vn-EPQ"/>
+                            <constraint firstItem="BPC-Y8-60H" firstAttribute="trailing" secondItem="FA4-V5-HBJ" secondAttribute="trailing" constant="129" id="9qQ-w3-kRX"/>
+                            <constraint firstItem="fmc-pb-hgg" firstAttribute="top" secondItem="FA4-V5-HBJ" secondAttribute="bottom" constant="25" id="CC7-dT-hmi"/>
+                            <constraint firstItem="BiA-CQ-Py3" firstAttribute="top" secondItem="fmc-pb-hgg" secondAttribute="bottom" constant="25" id="EAU-3z-taP"/>
+                            <constraint firstItem="FA4-V5-HBJ" firstAttribute="top" secondItem="PBr-4Y-DV9" secondAttribute="bottom" constant="25" id="N6q-wj-LlO"/>
+                            <constraint firstItem="FA4-V5-HBJ" firstAttribute="leading" secondItem="BPC-Y8-60H" secondAttribute="leading" constant="128" id="Qa4-bE-oLD"/>
+                            <constraint firstItem="PBr-4Y-DV9" firstAttribute="leading" secondItem="BPC-Y8-60H" secondAttribute="leading" constant="128" id="caA-hZ-hKY"/>
+                            <constraint firstItem="BPC-Y8-60H" firstAttribute="trailing" secondItem="BiA-CQ-Py3" secondAttribute="trailing" constant="129" id="gLD-XK-HHc"/>
+                            <constraint firstItem="BPC-Y8-60H" firstAttribute="trailing" secondItem="fmc-pb-hgg" secondAttribute="trailing" constant="129" id="pLa-bU-7Cb"/>
+                            <constraint firstItem="BiA-CQ-Py3" firstAttribute="leading" secondItem="BPC-Y8-60H" secondAttribute="leading" constant="128" id="pXJ-6x-MbD"/>
+                            <constraint firstItem="fmc-pb-hgg" firstAttribute="leading" secondItem="BPC-Y8-60H" secondAttribute="leading" constant="128" id="zO0-qM-c1D"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Uyk-1s-l41">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="resultLabel" destination="BiA-CQ-Py3" id="gHm-kK-eGV"/>
+                        <outlet property="textField1" destination="PBr-4Y-DV9" id="SYN-fn-HrM"/>
+                        <outlet property="textField2" destination="FA4-V5-HBJ" id="faN-aO-J5D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Qh-eI-BKh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="767.17557251908397" y="14.788732394366198"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="TOX-e4-sVW">
+            <objects>
+                <viewController id="DZQ-V8-F0Y" customClass="firstViewController" customModule="Motoki0724kadai7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u3b-pc-GGr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qC2-0P-Ztk">
+                                <rect key="frame" x="128" y="74" width="137" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B4j-3h-zJq">
+                                <rect key="frame" x="128" y="133" width="137" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szG-fJ-vI4">
+                                <rect key="frame" x="128" y="192" width="137" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapButtom:" destination="DZQ-V8-F0Y" eventType="touchUpInside" id="oa2-DA-xl5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHH-If-tWT">
+                                <rect key="frame" x="131" y="252" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uyc-yj-Wwe"/>
+                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="szG-fJ-vI4" firstAttribute="top" secondItem="B4j-3h-zJq" secondAttribute="bottom" constant="25" id="3bv-nu-Xpx"/>
+                            <constraint firstItem="uyc-yj-Wwe" firstAttribute="trailing" secondItem="qC2-0P-Ztk" secondAttribute="trailing" constant="128" id="7mN-PN-yUy"/>
+                            <constraint firstItem="uyc-yj-Wwe" firstAttribute="trailing" secondItem="B4j-3h-zJq" secondAttribute="trailing" constant="128" id="Mqe-Oa-ZDg"/>
+                            <constraint firstItem="uyc-yj-Wwe" firstAttribute="trailing" secondItem="szG-fJ-vI4" secondAttribute="trailing" constant="128" id="N9E-A6-plS"/>
+                            <constraint firstItem="B4j-3h-zJq" firstAttribute="leading" secondItem="uyc-yj-Wwe" secondAttribute="leading" constant="128" id="PNW-Xd-CAt"/>
+                            <constraint firstItem="mHH-If-tWT" firstAttribute="top" secondItem="szG-fJ-vI4" secondAttribute="bottom" constant="25" id="TJu-76-NEG"/>
+                            <constraint firstItem="B4j-3h-zJq" firstAttribute="top" secondItem="qC2-0P-Ztk" secondAttribute="bottom" constant="25" id="ddJ-lb-2KG"/>
+                            <constraint firstItem="mHH-If-tWT" firstAttribute="leading" secondItem="uyc-yj-Wwe" secondAttribute="leading" constant="131" id="eVa-io-zH3"/>
+                            <constraint firstItem="uyc-yj-Wwe" firstAttribute="trailing" secondItem="mHH-If-tWT" secondAttribute="trailing" constant="132" id="nbq-st-Iey"/>
+                            <constraint firstItem="qC2-0P-Ztk" firstAttribute="leading" secondItem="uyc-yj-Wwe" secondAttribute="leading" constant="128" id="qv5-XO-5VN"/>
+                            <constraint firstItem="szG-fJ-vI4" firstAttribute="leading" secondItem="uyc-yj-Wwe" secondAttribute="leading" constant="128" id="wce-my-WfY"/>
+                            <constraint firstItem="qC2-0P-Ztk" firstAttribute="top" secondItem="uyc-yj-Wwe" secondAttribute="top" constant="15" id="zhH-ZT-qqk"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="7ci-Xi-vTV">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="resultLabel" destination="mHH-If-tWT" id="p3N-R0-h7H"/>
+                        <outlet property="textField1" destination="qC2-0P-Ztk" id="IXx-LT-TGW"/>
+                        <outlet property="textField2" destination="B4j-3h-zJq" id="EqO-ON-8si"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZfW-tz-8AT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765.64885496183206" y="-593.66197183098598"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nJS-O6-2dB">
+            <objects>
+                <tabBarController id="HXY-Om-KQ5" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gLV-JH-Byi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="tintColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="DZQ-V8-F0Y" kind="relationship" relationship="viewControllers" id="Ko7-SQ-9nW"/>
+                        <segue destination="dLg-fe-U2G" kind="relationship" relationship="viewControllers" id="aq5-n7-pGd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aef-OU-3C4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-926" y="-199"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" name="AccentColor"/>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
