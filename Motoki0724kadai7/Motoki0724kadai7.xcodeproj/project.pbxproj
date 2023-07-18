@@ -42,8 +42,6 @@
 		B759E46B2A5B5C7D0096891E = {
 			isa = PBXGroup;
 			children = (
-				B759E48D2A5B64310096891E /* SecondViewController.swift */,
-				B759E48B2A5B64060096891E /* FirstViewController.swift */,
 				B759E4762A5B5C7D0096891E /* Motoki0724kadai7 */,
 				B759E4752A5B5C7D0096891E /* Products */,
 			);
@@ -60,6 +58,8 @@
 		B759E4762A5B5C7D0096891E /* Motoki0724kadai7 */ = {
 			isa = PBXGroup;
 			children = (
+				B759E48B2A5B64060096891E /* FirstViewController.swift */,
+				B759E48D2A5B64310096891E /* SecondViewController.swift */,
 				B759E4772A5B5C7D0096891E /* AppDelegate.swift */,
 				B759E4792A5B5C7D0096891E /* SceneDelegate.swift */,
 				B759E47D2A5B5C7D0096891E /* Main.storyboard */,
